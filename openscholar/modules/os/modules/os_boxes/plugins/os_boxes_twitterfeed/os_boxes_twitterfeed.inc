@@ -129,7 +129,7 @@ class os_boxes_twitterfeed extends os_boxes_default {
       $num_items = $this->options['num_items'];
       $followme_link = $this->options['followme_link'];
 
-      if ($twitkey[0] != '@' || $twitkey[0] != '#') {
+      if ($twitkey[0] != '@' && $twitkey[0] != '#') {
         switch($this->options['twitter_type']) {
           case 'user':
             $twitkey = '@' . $twitkey;
